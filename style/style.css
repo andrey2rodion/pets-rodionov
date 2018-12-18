@@ -1,0 +1,446 @@
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+
+body {
+	background-color: #ede9e0;
+	width: 1024px;
+	margin: auto;
+	font-family: 'Roboto';
+}
+
+.header-container {
+	background-image: url("../img/dog.svg");
+	background-repeat: no-repeat;
+	height: 637px;
+	
+	display: flex;
+	flex-direction : column;
+}
+
+.logo {
+	margin-top:  10px;
+	margin-left: 20px;
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+}
+.main-nav { 
+	font-size: 16px; 
+	color: #202020;
+	font-family: 'Roboto';
+
+
+	display: flex;
+	display: inline-flex;
+	align-items: baseline;
+	justify-content: flex-end;
+}
+
+.nav-item {
+	margin: 14px;
+
+	
+	display: flex;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+.nav-item:first-child {
+	margin: 0 14px 0 200px;
+}
+
+.nav-link {
+	list-style: none;
+	color: #202020;
+	text-decoration: none;
+}
+
+.tel {
+	margin: 14px;
+	display: flex;
+	justify-content: flex-end;
+	
+	color: #510fad;
+}
+
+.promo{
+	display: flex;
+	display: inline-flex;
+	align-items: center;
+	margin-left: 370px;
+	margin-top: 90px;
+}
+
+.promo-title{
+	font-family: 'Roboto';
+	display: flex;
+	flex-direction: column;
+
+	
+}
+.main-title {
+	font-family: 'Fira Sans';
+	width: 600px;
+	font-size: 48px;
+	color: #202020;
+	line-height: 60px;
+
+}
+.subtitle {
+	color: #727173;
+	width: 600px;
+	border-left: solid;
+	border-color: #510fad; 
+	padding: 0 10px;
+}
+
+
+.about {
+	background-color: #510fad; 
+	width: 1024px;
+	height: 700px;
+}
+
+.about-head {
+	font-family: 'Roboto';
+	width: 360px;
+	padding-top: 130px;
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.about-title{
+	font-family: 'Fira Sans';
+	color: #fff;
+	font-size: 36px;
+	line-height: 20px;
+}
+
+.about-subtitle {
+	color: #b8adc8;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.about-list {
+	color: #b8adc8;
+	padding-top: 35px;
+
+}
+.about-item {
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.about-link {
+	color: #ffec00;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Fira Sans';
+}
+
+.dogs {
+	width: 1024px;
+	margin: 60px 0;
+}
+
+.dogs-title {
+	font-family: 'Fira Sans';
+	font-size: 36px;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+}
+.all-breeds {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.dogs-item {
+	width: 450px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	font-family: 'Roboto';
+	font-size: 16px;
+	margin: 10px;
+}
+
+.dogs-item-title{
+	font-family: 'Fira Sans';
+	font-size: 24px;
+	line-height: 20px;
+	color: #202020;
+}
+
+.dogs-text {
+	width: 295px;
+	float: right;
+	line-height: 30px;
+	color: #737274;
+}
+
+.dogs-link {
+	width: 350px;
+	font-family: 'Fira Sans';
+}
+.reviews {
+	padding: 80px 0;
+}
+.reviews-title{
+	font-family: 'Fira Sans';
+	font-size: 36px;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.reviews-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Roboto';
+	font-size: 16px;
+
+	background-image: url(../img/“.svg);
+	background-repeat: no-repeat;
+	background-position-x: 30px;
+}
+
+.reviews-1 {
+	width: 456px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px;
+	padding-top: 60px;
+	padding-left: 20px;
+}
+
+.reviews-name {
+	font-family: 'Fira Sans';
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.reviews-data {
+	font-style: italic;
+	color: #838282;
+}
+
+.reviews-photo {
+	padding-top: 35px;
+	padding-left: 10px;
+}
+
+.reviews-caption {
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px;
+	font-style: italic;
+	color: #737274;
+	/*padding-left: 40px;*/
+}
+
+.dog-info {
+	background-image: url(../img/background_dog-info.png);
+	height: 500px;
+	width: 1024px;
+}
+
+.dog-info-wrap {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	padding: 100px 45px;
+
+}
+
+
+.dog-info-title {
+	font-family: 'Fira Sans';
+	font-size: 36px;
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.about-dogs-text {
+	color: #b1a2c6;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+
+.dog-info-icons-list {
+	padding-top: 40px;
+/*	margin:  10px;*/
+
+}
+.dog-info-icons-list-item {
+	margin: 4px;
+}
+
+.dog-info-articles {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+
+}
+
+.dog-info-ration, .dog-info-depression {
+	width: 220px;
+	height: 290px;
+	overflow: hidden;
+	border-radius: 10px;
+	background-color: #fff;
+	margin: 10px;
+/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+}
+
+.ration-text, .depression-text {
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+
+.ration-link, .depression-link {
+	font-family: 'Fira Sans';
+	font-size: 14px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+
+.contacts {
+	height: 490px;
+	margin: 45px;
+	margin-top: 145px;
+}
+.contacts-title {
+	font-family: 'Fira Sans';
+	color: #202020;
+	font-size: 36px;
+	line-height: 30px;
+}
+
+.contacts-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contacts-item {
+	width: 49%;
+}
+
+.contacts-info {
+	font-family: 'Fira Sans';
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: bolder; 
+	color: #737274;
+}
+
+.contacts-additional-info {
+	color: #202020;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.footer-wrap {
+	width: 940px;
+	border-top: 2px solid #d5d1ca;
+	margin: auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.footer-nav {	
+	font-size: 16px; 
+	color: #202020;
+	font-family: 'Roboto';
+
+
+	display: flex;
+	display: inline-flex;
+	align-items: baseline;
+	justify-content: flex-end;
+}
+
+.footer-nav-list {
+	padding-left: 0;
+}
+
+.footer-nav-item {
+	font-family: 'Roboto';
+	font-size: 16px;
+	margin: 14px;
+	margin-left: 0;
+	
+	display: flex;
+	display: inline-flex;
+}
+
+.footer-nav-link {
+	list-style: none;
+	color: #737274;
+	text-decoration: none;
+}
+
+.footer-social-icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-icons-item {
+	margin-left: 9px;
+}
+
+.btn {
+	box-sizing: border-box;	
+	border: 0;
+	background-color: transparent;
+	box-shadow: none;
+	padding: 0;
+	height: 40px;	
+	line-height: 40px;	
+	padding: 0 30px;	
+	border: 1px solid orange;
+	background-color: orange;
+	color: #111111;
+	font-size: 16px;	
+	letter-spacing: 1.1;
+	display: inline-block;	
+	cursor: pointer;
+}
+.btn:hover {
+	opacity: 	0.9;
+}
+.btn:avtive {
+
+}
+.btn:focus {
+	outline: 0;
+}
