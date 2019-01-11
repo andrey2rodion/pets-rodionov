@@ -1,19 +1,51 @@
 @font-face {
-	font-family: 'Roboto', sans-serif;
-	font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Medium.woff2') format('woff2'),
+        url('../fonts/FiraSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 body {
 	background-color: #ede9e0;
+	width: 1174px;
+	font-family: 'Roboto';
+	margin: auto;
+}
+.container {
 	width: 1024px;
 	margin: auto;
-	font-family: 'Roboto';
 }
 
 .header-container {
-	background-image: url("../img/dog.svg");
+	background-image: url("../img/dog.png");
 	background-repeat: no-repeat;
+	background-position-x: 15px;
 	height: 637px;
 	
 	display: flex;
@@ -22,7 +54,7 @@ body {
 
 .logo {
 	margin-top:  10px;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 .menu{
 	display: flex;
@@ -57,6 +89,9 @@ body {
 	list-style: none;
 	color: #202020;
 	text-decoration: none;
+}
+.nav-link:hover {
+	color: #510fad;
 }
 
 .tel {
@@ -99,6 +134,12 @@ body {
 }
 
 
+.about:before {
+	image: url(../img/backround_shape.png);
+}
+.about:after {
+	background-image: url(../img/backround_shape.jpg);
+}
 .about {
 	background-color: #510fad; 
 	width: 1024px;
@@ -133,14 +174,18 @@ body {
 }
 
 .about-list {
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px;
 	color: #b8adc8;
-	padding-top: 35px;
-
+	padding-top: 15px;
+	font-weight: normal;
 }
 .about-item {
 	font-size: 16px;
 	line-height: 30px;
 	color: #fff;
+	margin-top: 10px;
 }
 
 .about-link {
@@ -148,8 +193,25 @@ body {
 	text-decoration: none;
 
 	display: flex;
-	justify-content: space-between;
 	font-family: 'Fira Sans';
+
+	margin-top: 80px;
+    margin-left: 23px;
+}
+.about-dog {
+	margin-left: 41px;
+	margin-top: 15px;
+
+	box-shadow: 3px 14px 27px -9px rgba(0,0,0,0.7);
+	border-radius: 10px;
+}
+
+.about-dog:hover {
+	box-shadow: 14px 13px 32px -3px rgba(0,0,0,0.75);
+}
+
+.about-arrow-forward {
+	margin-left: 18px;
 }
 
 .dogs {
@@ -187,6 +249,9 @@ body {
 	line-height: 20px;
 	color: #202020;
 }
+.dogs-item-photo {
+	border-radius: 50%;
+}
 
 .dogs-text {
 	width: 295px;
@@ -198,6 +263,17 @@ body {
 .dogs-link {
 	width: 350px;
 	font-family: 'Fira Sans';
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #703bb7;
+}
+
+.dogs-link:hover {
+	color: #737274;
+}
+
+.dogs-text-descr {
+	margin-top: 0;
 }
 .reviews {
 	padding: 80px 0;
@@ -219,7 +295,7 @@ body {
 
 	background-image: url(../img/“.svg);
 	background-repeat: no-repeat;
-	background-position-x: 30px;
+	background-position-x: 70px;
 }
 
 .reviews-1 {
@@ -246,7 +322,14 @@ body {
 	padding-top: 35px;
 	padding-left: 10px;
 }
+.reviews-photo-item1 {
+	border-radius: 10px;
+	box-shadow: 3px 14px 27px -9px rgba(0,0,0,0.7);
+}
 
+.reviews-photo-item1:hover {
+	box-shadow: 14px 13px 32px -3px rgba(0,0,0,0.75);
+}
 .reviews-caption {
 	font-family: 'Roboto';
 	font-size: 16px;
@@ -300,7 +383,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	margin: 20px;
-
+	margin-top: 0;
 }
 
 .dog-info-ration, .dog-info-depression {
@@ -310,9 +393,11 @@ body {
 	border-radius: 10px;
 	background-color: #fff;
 	margin: 10px;
-/*	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;*/
+	box-shadow: 3px 14px 27px -9px rgba(0,0,0,0.7);
+}
+
+.dog-info-ration:hover, .dog-info-depression:hover {
+	box-shadow: 14px 13px 32px -3px rgba(0,0,0,0.75);
 }
 
 .ration-text, .depression-text {
@@ -329,6 +414,16 @@ body {
 	padding-left: 10px;
 }
 
+.ration-link-read_more {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 30px;
+	color: #5c11c5;
+}
+
+.ration-arrow {
+	margin-left: 10px;
+}
 .contacts {
 	height: 490px;
 	margin: 45px;
